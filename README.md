@@ -6,24 +6,37 @@
 
 它会自己呼吸、侧头张望、沿屏幕底边散步，可以用鼠标拎着走，点一下会弹一下。
 
-## 运行
+## 下载
 
-本仓库只提供源码，不放预编译包。要跑起来：
+Windows x64 免安装单文件（约 46 MB，不需要装 Python）：
+
+**→ [Releases / NaiWaPet.exe](https://github.com/trixster2/nai-wa-pet/releases/latest)**
+
+> 双击即运行。程序没有做代码签名，首次启动 Windows 可能弹 SmartScreen 提示，
+> 点「仍要运行」即可。
+
+安卓没有发布 APK，要自己装到手机上见文末「跨平台」。
+
+## 从源码运行
 
 ```bash
 pip install PySide6
-python pet.py
+python pet.py              # 启动
 ```
 
-要打成免安装单文件（Windows x64，约 46 MB）：
+打包成免安装单文件：
 
 ```bash
 pip install pyinstaller
-python build_exe.py      # 产出 dist/NaiWaPet.exe
+python build_exe.py        # 产出 dist/NaiWaPet.exe
 ```
 
-> 自己打的包没有做代码签名，首次启动 Windows 可能弹 SmartScreen 提示，
-> 点「仍要运行」即可。
+素材是随仓库分发的现成 PNG，正常情况不需要重新生成；要重跑抠图：
+
+```bash
+python make_sprites.py     # 从 assets/ 重新生成 sprites/
+python make_preview.py     # 重新生成 docs/ 里的 README 配图
+```
 
 ## 怎么玩
 
