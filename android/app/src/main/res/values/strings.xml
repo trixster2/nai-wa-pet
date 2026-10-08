@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">奶蛙桌宠</string>
+    <string name="notif_title">奶蛙还在桌面上</string>
+    <string name="notif_text">按住可拖动，单击会弹一下，它会自己散步</string>
+    <string name="intro">一只仰天大笑的奶油黄小蛙，会抱着肚子散步。需要「显示在其他应用上层」权限才能出现在屏幕上。</string>
+    <string name="btn_start">启动桌宠</string>
+    <string name="btn_walk">让它走动</string>
+    <string name="btn_idle">让它停下</string>
+    <string name="btn_quit">退出</string>
+    <string name="origin_hint">vivo / iQOO 的 OriginOS 会主动杀后台：请在「设置 → 应用与权限 → 奶蛙桌宠」里把自启动打开，并把耗电行为设为「允许后台高耗电 / 无限制」，否则桌宠几分钟后就会消失。</string>
+</resources>

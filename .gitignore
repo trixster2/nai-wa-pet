@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+*.log
+_probe_whl/
+_shot_*.png
+_exe_shot.png
+sprites/*_probe.jpg
+apk/
+watch.log
+.gradle/
+local.properties
+_probe/
