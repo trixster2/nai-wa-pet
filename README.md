@@ -6,13 +6,23 @@
 
 它会自己呼吸、侧头张望、沿屏幕底边散步，可以用鼠标拎着走，点一下会弹一下。
 
-## 下载
+## 运行
 
-Windows x64 免安装单文件：
+本仓库只提供源码，不放预编译包。要跑起来：
 
-**→ [Releases / NaiWaPet.exe](https://github.com/trixster2/nai-wa-pet/releases/latest)**
+```bash
+pip install PySide6
+python pet.py
+```
 
-> 双击即运行。程序没有做代码签名，首次启动 Windows 可能弹 SmartScreen 提示，
+要打成免安装单文件（Windows x64，约 46 MB）：
+
+```bash
+pip install pyinstaller
+python build_exe.py      # 产出 dist/NaiWaPet.exe
+```
+
+> 自己打的包没有做代码签名，首次启动 Windows 可能弹 SmartScreen 提示，
 > 点「仍要运行」即可。
 
 ## 怎么玩
@@ -80,7 +90,8 @@ python pet.py              # 启动
 - **Wayland** 下窗口管理器可能不允许置顶与绝对定位，这是协议限制，不是本项目的 bug。
 - **Android**：`android/` 下是一份 Kotlin 移植（PySide6 不支持安卓），用
   `TYPE_APPLICATION_OVERLAY` 悬浮窗实现同样的效果，包名 `com.trixster2.naiwapet`。
-  GitHub Actions 云编译配置在 `.github/workflows/android.yml`。
+  本仓库不发布 APK；要自己装到手机上，装 Android SDK 后在 `android/` 里跑
+  `./gradlew assembleDebug`，产物在 `android/app/build/outputs/apk/debug/`。
 
 ## 版权说明（请读完）
 
